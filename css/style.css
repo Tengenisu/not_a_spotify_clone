@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* CSS reset */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/*  */
+
+/* changing the background color and font sizes */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  background-color: black;
+  color: white;
+}
+
+/*  */
+
+.overall_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* designing the top-left container */
+
+.top_left_container {
+  width: 300px;
+  height: auto;
+  margin: 5px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: #d7fff1;
+}
+/*  */
+
+/* designing the home icon with svg */
+.home_icons {
+  display: flex;
+  align-items: center; /* this css block is used to put the icon and caption side by side */
+}
+
+.home_icons .home_page_svg {
+  height: 30px;
+  margin: 10px;
+}
+
+.home_icons figcaption {
+  margin: 10px;
+  font-size: 30px;
+  color: black;
+}
+/* */
+
+/* designing the searcg icon with svg */
+.search_icons {
+  display: flex;
+  align-items: center;
+}
+
+.search_icons .search_svg {
+  height: 30px;
+  margin: 10px;
+}
+
+.search_icons figcaption {
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+}
+
+/*  */
+
+/* making the rest of the left container */
+.library_for_music {
+  width: 300px;
+  height: 600px;
+  margin-left: 5px;
+  border: 2px solid #d7fff1;
+  border-radius: 10px;
+  background-color: #d7fff1;
+}
+/*  */
+
+/* to align the your library add more and how more page  */
+.playlist .your_library {
+  display: flex;
+  align-items: center;
+}
+
+.playlist .your_library img {
+  width: 30px;
+  margin: 5px;
+}
+
+.playlist .your_library figcaption {
+  color: black;
+}
+
+.playlist .your_library .more_icon {
+  margin-left: 70px;
+}
+
+.library_option_wrapper {
+  display: flex;
+  align-items: center;
+}
+/*  */
+
+/* making the playlist containser  */
+
+.library_options {
+  width: 120px;
+  height: auto;
+  border: 2px solid black;
+  background-color: #aafcb8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.library_options h2 {
+  color: black;
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+/* making podcast and shows page */
+.library_options_02 {
+  width: 170px;
+  height: auto;
+  border: 2px solid black;
+  background-color: #aafcb8;
+  margin-left: 5px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.library_options_02 h2 {
+  color: black;
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+/*  */
+
+/* aligning the search and recent wrapper  */
+.search_and_recent_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search_wrapper .search_bar img {
+  width: 30px;
+  height: auto;
+}
+
+.recent_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.recent_wrapper .recents {
+  display: flex;
+  align-items: center;
+}
+
+.recent_wrapper .recents img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.recent_wrapper .recents figcaption {
+  color: black;
+  margin-left: 160px;
+  margin-right: 5px;
+}
+
+/*  */
+
+/* making the artist wrapper */
+.artist_wrapper_01 {
+  width: 290px;
+  height: auto;
+  display: flex;
+  background-color: #aafcb8;
+  border: 2px solid #aafcb8;
+  margin-left: 2.8px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.first_artist {
+  display: flex;
+  align-items: center;
+}
+
+.first_artist figcaption {
+  color: black;
+  padding: 5px;
+  font-size: 1.25rem;
+}
+
+.first_artist img {
+  width: 40%;
+  height: auto;
+  padding: 2px;
+  border: 2px;
+  border-radius: 20%;
+}
+/* */
+
+/* second artist wrapper */
+.artist_wrapper_02 {
+  width: 290px;
+  height: auto;
+  margin-left: 4px;
+  margin-bottom: 2px;
+  border: 3px solid #aafcb8;
+  background-color: #aafcb8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.artist_wrapper_02 .second_artist {
+  display: flex;
+  align-items: center;
+  padding-left: 1px;
+}
+
+.artist_wrapper_02 .second_artist img {
+  width: 40%;
+  height: auto;
+  padding: 5px;
+  /* border: 2px; */
+  border-radius: 10px;
+}
+
+.artist_wrapper_02 .second_artist figcaption {
+  color: black;
+  font-size: 1.2rem;
+}
+/*  */
+
+/* third artist wrapper */
+.artist_wrapper_03 {
+  width: 290px;
+  height: auto;
+  margin-left: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: 2px solid #aafcb8;
+  background-color: #aafcb8;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.artist_wrapper_03 .third_wrapper {
+  display: flex;
+  align-items: center;
+}
+.artist_wrapper_03 .third_wrapper figcaption {
+  color: black;
+  margin: 3px;
+  font-size: 1.25rem;
+}
+
+.artist_wrapper_03 .third_wrapper img {
+  width: 30%;
+  height: auto;
+  border: 2px;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+/* footer container */
+footer {
+  width: 100%;
+  height: auto;
+  bottom: 0%;
+  position: fixed;
+  background-color: #8cd790;
+}
+/*  */
+
+.split {
+  display: flex;
+  align-items: center;
+}
+
+/* figure container */
+.footer_figure {
+  display: flex;
+  align-items: center;
+}
+/*  */
+
+/* division between 2 captions , name of the album and the author name */
+.footer_figure .caption {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0%;
+}
+/*  */
+
+/* name of the album  */
+.footer_figure figcaption {
+  color: black;
+  font-size: 0.8rem;
+  margin-left: 4px;
+  margin-bottom: 3px;
+  padding: 0%;
+}
+/*  */
+
+/* name of the author */
+.footer_figure .caption .author {
+  padding: 0%;
+  margin-top: 3px;
+}
+
+.footer_figure img {
+  width: 22%;
+  height: auto;
+  border: 2px;
+  border-radius: 10px;
+  margin: 6px;
+}
+
+.verified_logo {
+  width: 30%;
+  height: auto;
+  border: none;
+}
+
+.verified_logo_img {
+  border: none;
+}
+
+.slider_options {
+  display: flex;
+  flex-direction: row;
+}
+
+.options {
+  margin-left: 180px;
+  margin-bottom: 10px;
+}
+
+.options img {
+  width: 4.3%;
+  height: auto;
+}
+
+.sidebar_container {
+  position: relative;
+}
+
+.slider_bar {
+  width: 600px;
+  height: 10px;
+  background-color: aqua;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.sidebar_text {
+  position: absolute;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar_text_02 {
+  position: absolute;
+  margin-left: 570px;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+/*  */
+
+.main_wrapper {
+  width: calc(80% - 300px); /* Adjust according to the width of your sidebar */
+  height: 1000px;
+  margin-left: 303px;
+  margin-top: 5px;
+  top: 0;
+  border-radius: 10px;
+  background-color: #d7fff1;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.top_wrapper {
+  width: calc(70% -300px);
+  height: 70px;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.figure_wrapper_01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Distribute items along the main axis */
+}
+
+.back_arrow {
+  width: 60%;
+  height: 52px;
+  margin: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #aafcb8;
+}
+
+.front_arrow {
+  width: 60%;
+  height: 52px;
+  border-radius: 50%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #aafcb8;
+}
+
+.back_arrow img,
+.front_arrow img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.figure_wrapper_02 {
+  margin-left: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.notificarion_fig,
+.community_fig {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: #aafcb8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notificarion_fig img,
+.community_fig img,
+.profile_picture img {
+  width: 40%;
+  height: auto;
+  margin: 0 0.25rem; /* Adjust the margin to control spacing */
+}
+
+.profile_picture {
+  width: 25%;
+  height: 53px;
+  margin-bottom: 10px;
+}
+
+.profile_picture img {
+  width: 60%;
+  border-radius: 50%;
+  border: 2px double gold;
+}
+
+.main_image_wrapper {
+  width: 99.5%;
+  margin: 2px;
+  margin-right: 2px;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-image: linear-gradient(to right, lightblue, rgb(255, 139, 255));
+}
+
+.main_image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main_image img {
+  width: 40%;
+  height: auto;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.main_image .main_album_name {
+  font-size: 4rem;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.main_image .main_author_name {
+  font-size: 2rem;
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sidebar_wrapper {
+  width: 275px;
+  height: 100%;
+  border: 2px solid gold;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: #aafcb8;
+  display: flex;
+}
+
+.sb_artist_wrapper {
+  width: 250px;
+  height: auto;
+  border: 2px solid red;
+  margin: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: #8cd790;
+}
+
+.sb_artist_wrapper .sidebar_artist img {
+  width: 50%;
+  height: auto;
+  margin: 10px;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+
+.figcap_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.figcap_wrapper figcaption {
+  color: black;
+  margin: 2px;
+}
